@@ -35,45 +35,43 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">  
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/1000_14_20.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/harrisonco.css">
   <!-- end CSS-->
 
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-<div class="main">
+<div class="main clearfix">
 	<div id="header" class="g980">
-		<div class="g210 inside">
-			<p><a href="#">HC Clients</a></p>
-			<p><a href="#">Realtor Login</a></p>
-		</div>
+		<?php 
+		wp_nav_menu( 	array( 
+							'theme_location' => 'login-menu',
+							'container_class' => 'g210 inside',
+							'container_id' => 'login-nav'
+							 ) 
+		 ); 
+		 ?>
 		<div id="logo" class="g560">
 			<img src="<?php bloginfo('template_directory'); ?>/img/hc-logo.png" alt="" />
 		</div>
 		<div class="g210">
-			<p>
+			<p class="book-pass">
 				Book your Empire Pass accomodations wth us!<br />
 				<a href="#">EmpireLuxuryLodging.com</a>
 				888·983·6747
 			</p>
 		</div>
-<!--
-		<ul class="g980 inside" id="nav">
-			<li>Home</li>
-			<li>Property Management</li>
-			<li>HOA Management</li>
-			<li>Harrison Construction</li>
-			<li>Empire Luxury Lodging</li>
-			<li>About Us</li>
-			<li>Contact Us</li>
-		</ul>
--->
-		<?php wp_nav_menu( 	array( 
+		<?php 
+		wp_nav_menu( 	array( 
 							'theme_location' => 'primary-menu',
-							'menu_class' => 'g980 inside primary-menu'
+							'container_class' => 'g980 inside',
+							'container_id' => 'nav'
 							 ) 
-		 ); ?>
+		 ); 
+		 ?>
 	</div>
 
-	<div class="g980" id="exclusive">&nbsp;</div>
+	<div class="g980" id="exclusive"><img src="<?php bloginfo('template_directory'); ?>/img/exclusive.png" alt="" /></div>

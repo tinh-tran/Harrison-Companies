@@ -18,16 +18,19 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 ?>
-		<div class="g980">
+</div> <!-- end of #container -->
+		<div id="footer">
 		<?php wp_nav_menu( 	array( 
 							'theme_location' => 'footer-menu',
 							'menu_class' => 'footer-menu'
 							 ) 
 		 ); ?>
-			<p></p>
-			<p></p>
+			<p>Main Empire Pass Service Office:  8880 Empire Club Drive | 435-333-6900 | 435-649-8800<br />
+Visit our sister site <a href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>, offering the height of upper Deer Valley Resort vacation experiences.
+</p>
+			<p>Copyright 2011 Harrison Companies. All Rights Reserved.</p>
 		</div>
-  </div> <!-- end of #container -->
+  
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

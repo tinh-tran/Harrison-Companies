@@ -18,24 +18,6 @@
 if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { die(); }
 if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 
-?>
-<div>
-
-<a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-
-<?php
-
 the_content(); 
 
-wp_link_pages();
-
-the_date();
-
-the_author();
-
-comments_popup_link(__('No comments', 'carrington-jam'), __('1 comment', 'carrington-jam'), __('% comments', 'carrington-jam'));
-
-edit_post_link(__('Edit This', 'carrington-jam'), '', '');
-
 ?>
-</div>

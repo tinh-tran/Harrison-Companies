@@ -33,11 +33,8 @@ echo "</div>";
 echo '<div class="g630 in70" id="post">';
 cfct_loop();
 echo '</div>';
-
-/* comments_template();*/
-echo '<div class="g280" id="sidebar">';
 get_sidebar();
-echo '</div>';
+
 echo '</div>';
 get_footer();
 

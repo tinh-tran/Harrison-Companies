@@ -1,10 +1,24 @@
-.main {background:#000}
+body{background: #000033}
+.main {background:#000 url("../img/h-bg-3.png") no-repeat top left}
 /* .main {background: url("../img/1000_14_20.png")} */
-#header {color: #ccc; height: 180px}
-#header a {color: #ccc}
-#logo{text-align: center}
+#header {color: #fff; height: 170px; padding-top: 10px; background:url("../img/h-bg-1.png") no-repeat top left}
+#header a, #footer a {color: #fff;text-decoration: none;}
+#header a:hover, #footer a:hover {text-decoration: underline}
+#logo, #units{text-align: center}
 #logo img {padding: 40px 0 20px 0}
 #nav {padding: 0; text-align: center}
-#nav li {display: inline; margin-right: 10px; list-style: none}
-#content{background: #fff}
-#exclusive {height: 60px; background: #fff}
+#nav li {display: inline; margin-right: 5px; padding-right:10px; border-right: 1px solid #fff; list-style: none}
+#nav li:last-child {border: none; padding: none; margin: none;}
+ul#menu-login {padding: none;}
+#menu-login li {list-style: none}
+.book-pass {text-align: right}
+#content{background: #fff; margin-bottom: 10px}
+#exclusive {height: 60px; text-align:center;background: #fff url("../img/h-bg-2.png") no-repeat top left}
+#footer {text-align: center; background: #000033; width:1000px; margin: 0 auto; padding: 30px 0 0 0; color: #fff; font-size: 0.8em}
+#footer ul {margin-bottom: 20px}
+#footer ul li {display: inline; margin-right: 5px; padding-right:10px; border-right: 1px solid #fff; list-style: none; }
+#post{padding: 10px 0}
+#sidebar{padding: 10px 0}
+.circle-nav {float: left; width:100%;list-style: none; padding-bottom: 20px}
+.circle-nav li {float: left; width: 33%; text-align: center}
+#pillow-placement {text-align: center; height: 70px; padding: 10px 0 0 0 }
