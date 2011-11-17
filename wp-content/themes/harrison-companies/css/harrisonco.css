@@ -1,0 +1,10 @@
+.main {background:#000}
+/* .main {background: url("../img/1000_14_20.png")} */
+#header {color: #ccc; height: 180px}
+#header a {color: #ccc}
+#logo{text-align: center}
+#logo img {padding: 40px 0 20px 0}
+#nav {padding: 0; text-align: center}
+#nav li {display: inline; margin-right: 10px; list-style: none}
+#content{background: #fff}
+#exclusive {height: 60px; background: #fff}

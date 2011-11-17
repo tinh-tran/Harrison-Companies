@@ -1,0 +1,119 @@
+/*
+1000px grid system ~ Core CSS.
+14 columns ~ margin: 20px
+
+Based on the golden grid system - http://code.google.com/p/the-golden-grid/
+by Vladimir Carrer
+
+Created by the Grid System Generator - v1.00
+Learn more ~ http://www.gridsystemgenerator.com/
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.main
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.g70, .g140, .g210, .g280, .g350, .g420, .g490, .g560, .g630, .g700, .g770, .g840, .g910, .g980 {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+}
+
+/* =Grid >> 14 Columns
+--------------------------------------------------------------------------------*/
+.g70 {width:50px;} /* 1 column */
+.g140{width:120px;} /* 2 column */
+.g210{width:190px;} /* 3 column */
+.g280{width:260px;} /* 4 column */
+.g350{width:330px;} /* 5 column */
+.g420{width:400px;} /* 6 column */
+.g490{width:470px;} /* 7 column */
+.g560{width:540px;} /* 8 column */
+.g630{width:610px;} /* 9 column */
+.g700{width:680px;} /* 10 column */
+.g770{width:750px;} /* 11 column */
+.g840{width:820px;} /* 12 column */
+.g910{width:890px;} /* 13 column */
+.g980{width:960px;} /* 14 column */
+
+
+/* =Grid >> 14 Columns - push column
+--------------------------------------------------------------------------------*/
+.ml70{margin-left:90px;} 
+.ml140{margin-left:160px;}
+.ml210{margin-left:230px;}
+.ml280{margin-left:300px;}
+.ml350{margin-left:370px;}
+.ml420{margin-left:440px;}
+.ml490{margin-left:510px;}
+.ml560{margin-left:580px;}
+.ml630{margin-left:650px;}
+.ml700{margin-left:720px;}
+.ml770{margin-left:790px;}
+.ml840{margin-left:860px;}
+.ml910{margin-left:930px;}
+.ml980{margin-left:1000px;}
+
+/* =Grid >> 14 Columns - I added thsi shit to push column inside another column
+--------------------------------------------------------------------------------*/
+.in70{margin-left:70px;} 
+.in140{margin-left:140px;}
+.in210{margin-left:210px;}
+.in280{margin-left:280px;}
+.in350{margin-left:350px;}
+.in420{margin-left:420px;}
+.in490{margin-left:490px;}
+.in560{margin-left:560px;}
+.in630{margin-left:630px;}
+.in700{margin-left:700px;}
+.in770{margin-left:770px;}
+.in840{margin-left:840px;}
+.in910{margin-left:910px;}
+.in980{margin-left:980px;}
+
+
+.inside{margin-left:0;}
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content:' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
