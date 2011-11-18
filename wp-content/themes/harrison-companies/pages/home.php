@@ -27,7 +27,9 @@ get_header();
 		/* This adds the fancy image to the top */
 		global $wp_query;
 		$postid = $wp_query->post->ID;
-		$img_src = get_post_meta($postid, 'header', true);
+		$upload_dir = wp_upload_dir(); 
+		$img_src = $upload_dir['baseurl'] . "/";
+		$img_src .= get_post_meta($postid, 'header', true);
 		echo "<img src='$img_src' alt='' />";
 		wp_reset_query();
 		?>
@@ -36,8 +38,8 @@ get_header();
 		<img src="<?php bloginfo('template_directory'); ?>/img/pillow.png" alt="" />
 	</div>
 	<div class="g420 inside" id="units">
-		<p>Empire Pass Properties under management: <a href="http://localhost/~neal/harrisoncompanies/?page_id=46">Click here.</a></p>
-		<a href="http://localhost/~neal/harrisoncompanies/?page_id=46">
+		<p>Empire Pass Properties under management: <a href="<?php bloginfo('url') ?>?page_id=46">Click here.</a></p>
+		<a href="<?php bloginfo('url') ?>?page_id=46">
 			<img src="<?php bloginfo('template_directory'); ?>/img/home-units.jpg" alt="" />
 		</a>
 		<br /><br />
@@ -45,22 +47,24 @@ get_header();
 	<div class="g560 inside">
 		<ul class="circle-nav">
 			<li>
-				<a href="http://localhost/~neal/harrisoncompanies/?page_id=6">
+				<a href="<?php bloginfo('url') ?>?page_id=6">
 					<img src="<?php bloginfo('template_directory'); ?>/img/home-prop-managment.jpg" alt="" />
 				</a>
 			</li>
 			<li>
-				<a href="http://localhost/~neal/harrisoncompanies/?page_id=8">
+				<a href="<?php bloginfo('url') ?>?page_id=8">
 					<img src="<?php bloginfo('template_directory'); ?>/img/home-hoa-managment.jpg" alt="" />
 				</a>
 			</li>
 			<li>
-				<a href="http://localhost/~neal/harrisoncompanies/?page_id=10">
+				<a href="<?php bloginfo('url') ?>?page_id=10">
 					<img src="<?php bloginfo('template_directory'); ?>/img/home-construction.jpg" alt="" />
 				</a>
 			</li>
 		</ul>
 	<?php cfct_loop(); ?>
+	<div style="float:left; width:126px; margin-right:5px"><img src="<?php bloginfo('template_directory'); ?>/img/cam-weather.jpg" alt="" /></div>
+	<div style="float:left: width:405px"><?php echo do_shortcode('[forecast]'); ?></div>
 	</div>
 </div>
 <?php get_footer(); ?>

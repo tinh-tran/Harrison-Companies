@@ -41,6 +41,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
   <!-- end CSS-->
 
   <script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -60,7 +61,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 		<div class="g210">
 			<p class="book-pass">
 				Book your Empire Pass accomodations wth us!<br />
-				<a href="#">EmpireLuxuryLodging.com</a>
+				<a href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>
 				888·983·6747
 			</p>
 		</div>

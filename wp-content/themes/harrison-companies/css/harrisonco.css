@@ -1,4 +1,4 @@
-body{background: #000033}
+body{background: #000033 url("../img/bg.jpg") repeat-x top left}
 .main {background:#000 url("../img/h-bg-3.png") no-repeat top left}
 /* .main {background: url("../img/1000_14_20.png")} */
 #header {color: #fff; height: 170px; padding-top: 10px; background:url("../img/h-bg-1.png") no-repeat top left}
@@ -18,7 +18,12 @@ ul#menu-login {padding: none;}
 #footer ul {margin-bottom: 20px}
 #footer ul li {display: inline; margin-right: 5px; padding-right:10px; border-right: 1px solid #fff; list-style: none; }
 #post{padding: 10px 0}
+#post ul {margin-bottom: 10px}
+#post ul li{margin-left: 15px}
 #sidebar{padding: 10px 0}
 .circle-nav {float: left; width:100%;list-style: none; padding-bottom: 20px}
 .circle-nav li {float: left; width: 33%; text-align: center}
 #pillow-placement {text-align: center; height: 70px; padding: 10px 0 0 0 }
+.wp_wunderground {font-size: 0.8em; width: 405px; background: #000033; color: #fff}
+.wp_wunderground thead th { color: #fff; background: #000033; border-bottom: 1px solid #fff }
+.wp_wunderground img {width:50px; height: 50px}

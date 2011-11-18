@@ -55,7 +55,7 @@ Visit our sister site <a href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodgi
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-  
+<?php wp_footer(); ?>  
 </body>
 </html>
 <?php

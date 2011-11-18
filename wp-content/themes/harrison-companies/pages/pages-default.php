@@ -26,12 +26,15 @@ echo '<div class="g980" id="content">';
 echo '<div class="g980 inside" id="top_img">';
 global $wp_query;
 $postid = $wp_query->post->ID;
-$img_src = get_post_meta($postid, 'header', true);
+		$upload_dir = wp_upload_dir(); 
+		$img_src = $upload_dir['baseurl'] . "/";
+		$img_src .= get_post_meta($postid, 'header', true);
 echo "<img src='$img_src' alt='' />";
 wp_reset_query();
 echo "</div>";
 echo '<div class="g630 in70" id="post">';
 cfct_loop();
+do_action('posts_logout_link');
 echo '</div>';
 get_sidebar();
 
