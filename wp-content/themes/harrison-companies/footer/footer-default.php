@@ -26,9 +26,9 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 							 ) 
 		 ); ?>
 			<p>Main Empire Pass Service Office:  8880 Empire Club Drive | 435-333-6900 | 435-649-8800<br />
-Visit our sister site <a href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>, offering the height of upper Deer Valley Resort vacation experiences.
+Visit our sister site <a target="_blank" href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>, offering the height of upper Deer Valley Resort vacation experiences.
 </p>
-			<p>Copyright 2011 Harrison Companies. All Rights Reserved.</p>
+			<p>&copy; 2011 Harrison Companies. All Rights Reserved.</p>
 		</div>
   
 

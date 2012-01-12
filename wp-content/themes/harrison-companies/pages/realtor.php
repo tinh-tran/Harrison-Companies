@@ -35,11 +35,10 @@ if (!empty($header_img))
 }
 wp_reset_query();
 echo "</div>";
-echo '<div class="g630 in70" id="post">';
+echo '<div class="g840 in70" id="post">';
 cfct_loop();
 do_action('posts_logout_link');
 echo '</div>';
-get_sidebar();
 
 echo '</div>';
 get_footer();

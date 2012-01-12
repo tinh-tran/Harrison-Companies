@@ -28,7 +28,7 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title><?php wp_title(''); ?></title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -47,21 +47,18 @@ if (CFCT_DEBUG) { cfct_banner(__FILE__); }
 <body>
 <div class="main clearfix">
 	<div id="header" class="g980">
-		<?php 
-		wp_nav_menu( 	array( 
-							'theme_location' => 'login-menu',
-							'container_class' => 'g210 inside',
-							'container_id' => 'login-nav'
-							 ) 
-		 ); 
-		 ?>
+		<div id="login-nav" class="g210 inside">
+		<?php wp_nav_menu( array( 'theme_location' => 'login-menu', 'container' => false ) ); ?>
+		<p>Need help? 435.649.8800</p>
+		</div>
+		 
 		<div id="logo" class="g560">
-			<img src="<?php bloginfo('template_directory'); ?>/img/hc-logo.png" alt="" />
+			<a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_directory'); ?>/img/hc-logo.png" alt="" /></a>
 		</div>
 		<div class="g210">
 			<p class="book-pass">
 				Book your Empire Pass accomodations wth us!<br />
-				<a href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>
+				<a target="_blank" href="http://EmpireLuxuryLodging.com">EmpireLuxuryLodging.com</a>
 				888·983·6747
 			</p>
 		</div>
