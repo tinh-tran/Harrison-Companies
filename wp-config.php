@@ -19,10 +19,10 @@
 define('DB_NAME', 'w6cp_harrisonco');
 
 /** MySQL database username */
-define('DB_USER', 'w6cp_harrison');
+define('DB_USER', '');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'harrisonco');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'db2.slc1.stackable.com');
